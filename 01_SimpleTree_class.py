@@ -7,9 +7,9 @@
 class SimpleTreeNode:
 
     def __init__(self, val, parent):
-        self.NodeValue = val # значение в узле
-        self.Parent = parent # родитель или None для корня
-        self.Children = [] # список дочерних узлов
+        self.NodeValue = val
+        self.Parent = parent
+        self.Children = []
 
 class SimpleTree:
 
@@ -49,7 +49,7 @@ class SimpleTree:
                 list_to_return.append(node)
         return list_to_return
    
-    def MoveNode(self, OriginalNode, NewParent):        #соскальзывание узла для переноса?
+    def MoveNode(self, OriginalNode, NewParent):
         if self.Root is not OriginalNode:
             if NewParent is None:
                 self.Root = OriginalNode
