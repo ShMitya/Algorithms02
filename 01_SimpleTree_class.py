@@ -60,7 +60,6 @@ class SimpleTree:
             OriginalNode.Parent = NewParent
    
     def Count(self):
-        all_nodes_list = self.GetAllNodes()
         return len(self.GetAllNodes())
 
     def LeafCount(self):
